@@ -12,6 +12,11 @@ export interface IItemsConfig {
 
 export const itemsConfig: IItemsConfig[] = [
   {
+    url: require('../../../../../assets/img/index.mp4'),
+    showText: false,
+    video: true
+  },
+  {
     url: require('../../../../../assets/img/swiper-bg1.jpg'),
     title: '',
     content: ``,

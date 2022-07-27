@@ -1,6 +1,11 @@
 <template>
   <div class="fx-swiper">
-    <el-carousel :interval="5000" arrow="always" @change="changeItem">
+    <el-carousel
+      :interval="5000"
+      arrow="always"
+      @change="changeItem"
+      :autoplay="false"
+    >
       <el-carousel-item v-for="(item, index) in itemsConfig" :key="item.title">
         <swiper-item
           :swiperItemConfig="item"
