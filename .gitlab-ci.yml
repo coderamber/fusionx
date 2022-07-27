@@ -1,0 +1,12 @@
+image: node:14-buster
+
+jon_deploy:
+  image: docker
+  script:
+    - docker build -t drones_vue_59008 .
+    - if [ $(docker ps -aq --filter name=fusionx_index) ]; then docker rm -f fusionx_index;fi
+    - docker run -d -p 59008:80 --name fusionx_index drones_vue_59008
+    - docker cp ./nginx.conf fusionx_index:/etc/nginx/nginx.conf
+    - docker restart fusionx_index
+  only:
+    - tags
