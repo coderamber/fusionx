@@ -21,6 +21,9 @@ export default defineComponent({
 </script>
 
 <style scoped lang="less">
+// .ws-introduction {
+//   position: relative;
+// }
 .ws-introduction {
   position: relative;
   height: 100%;
