@@ -15,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/fusionx2',
     name: 'Fusionx2',
     component: () => import('@/views/Others/demo2/demo.vue')
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('@/views/About/about.vue')
   }
 ]
 

@@ -6,9 +6,10 @@
       <div class="shade"></div>
     </div>
     <div class="menus-box">
+      <div class="menu-item" @click="handleClick('home')">首页</div>
       <div class="menu-item" @click="handleClick('news')">新闻</div>
       <div class="menu-item" @click="handleClick('service')">产品及服务</div>
-      <div class="menu-item" @click="handleClick('workSpace')">公司简介</div>
+      <div class="menu-item" @click="handleClick('workSpace')">关于我们</div>
       <div class="menu-item" @click="handleClick('cooperate')">合作伙伴</div>
       <div class="menu-item" @click="handleClick('contact')">联系方式</div>
     </div>
