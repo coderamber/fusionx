@@ -11,7 +11,6 @@
       <div class="menu-item" @click="handleClick('service')">产品及服务</div>
       <div class="menu-item" @click="handleClick('workSpace')">关于我们</div>
       <div class="menu-item" @click="handleClick('cooperate')">合作伙伴</div>
-      <div class="menu-item" @click="handleClick('contact')">联系方式</div>
     </div>
   </div>
 </template>
@@ -50,17 +49,23 @@ export default defineComponent({
   box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.05);
   .close {
     position: absolute;
-    top: 35px;
+    top: 20px;
     right: 20px;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     .line1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       border-bottom: 4px solid #000;
       border-radius: 2px;
       width: 40px;
       transform: rotate(45deg);
     }
     .line2 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       border-bottom: 4px solid #000;
       border-radius: 2px;
       width: 40px;

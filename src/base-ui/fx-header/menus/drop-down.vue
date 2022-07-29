@@ -35,7 +35,7 @@ export default defineComponent({
     }
     const showDemo = (id: number) => {
       if (id === 1) {
-        const url = router.resolve({ path: '/fusionx1' })
+        const url = router.resolve({ path: '/demo1' })
         window.open(url.href, '_blank')
       } else {
         // const url = router.resolve({ path: '/fusionx2' })
@@ -66,17 +66,23 @@ export default defineComponent({
   box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.05);
   .close {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 20px;
+    right: 20px;
     height: 50px;
     width: 50px;
     .line1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       border-bottom: 4px solid #000;
       border-radius: 2px;
       width: 40px;
       transform: rotate(45deg);
     }
     .line2 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       border-bottom: 4px solid #000;
       border-radius: 2px;
       width: 40px;

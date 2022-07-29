@@ -10,8 +10,6 @@
     </div>
     <!-- 产品 -->
     <fx-introduction ref="service" />
-    <!-- 公司简介 -->
-    <!-- <fx-work-space ref="workSpace" /> -->
     <!-- 合作伙伴 -->
     <fx-cooperate ref="cooperate" />
     <!-- 底部 -->
@@ -25,7 +23,7 @@ import FxSwiper from './cpns/fx-swiper'
 import FxIntroduction from './cpns/fx-introduction'
 import FxNews from './cpns/fx-news'
 import FxCooperate from './cpns/fx-cooperate'
-import FxContact from './cpns/fx-contact'
+import FxContact from '@/views/Home/cpns/fx-contact'
 export default defineComponent({
   components: {
     FxSwiper,
@@ -38,7 +36,6 @@ export default defineComponent({
     const service = ref<InstanceType<typeof FxIntroduction>>()
     const news = ref<InstanceType<typeof FxNews>>()
     const cooperate = ref<InstanceType<typeof FxCooperate>>()
-    const contact = ref<InstanceType<typeof FxContact>>()
     const scrollToDetail = (ele: string) => {
       switch (ele) {
         case 'service':
@@ -50,9 +47,6 @@ export default defineComponent({
         case 'cooperate':
           cooperate.value?.goView()
           break
-        case 'contact':
-          contact.value?.goView()
-          break
         default:
           break
       }
@@ -61,7 +55,6 @@ export default defineComponent({
       service,
       news,
       cooperate,
-      contact,
       scrollToDetail
     }
   }

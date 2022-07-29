@@ -30,7 +30,8 @@
       </div>
     </div>
     <div class="copyright row">
-      <div>Copyright © 2022 Fusionx Ltd. - 浙ICP备2022021648号-1</div>
+      <div>浙ICP备2022021648号-1</div>
+      <div>Copyright © 2022 Fusionx Ltd.</div>
       <!-- <div class="gongan"> -->
       <!-- <img src="~@/assets/img/contact/gongan.png" alt="" /> -->
       <!-- <span>公网备案: xxxxxxxxxxxxxx</span> -->

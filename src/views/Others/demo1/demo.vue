@@ -137,7 +137,7 @@ export default defineComponent({
   width: 100vw;
   position: relative;
   background: #000;
-  z-index: 1;
+  z-index: 100005;
   .board-container {
     position: absolute;
     right: -5px;

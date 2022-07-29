@@ -49,7 +49,7 @@ export default defineComponent({
   margin-right: auto;
   margin-bottom: auto;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   .img-box {
     display: flex;
     max-width: 1200px;

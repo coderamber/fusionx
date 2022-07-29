@@ -14,6 +14,9 @@
         />
       </el-carousel-item>
     </el-carousel>
+    <div class="title-front">
+      <img src="~@/assets/img/logo1.png" />
+    </div>
   </div>
 </template>
 
@@ -51,6 +54,16 @@ export default defineComponent({
   position: relative;
   height: @swiperHeight;
   overflow: hidden;
+  .title-front {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      height: 300px;
+      width: auto;
+    }
+  }
 }
 ::v-deep .el-carousel__container {
   min-height: @swiperHeight;
@@ -60,6 +73,11 @@ export default defineComponent({
     position: relative;
     height: 40vh;
     overflow: hidden;
+    .title-front {
+      img {
+        height: 100px;
+      }
+    }
   }
   ::v-deep .el-carousel__container {
     min-height: 40vh;

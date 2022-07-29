@@ -35,12 +35,14 @@ import FxHeader from '@/base-ui/fx-header'
 import DropDown from '@/base-ui/fx-header/menus/drop-down.vue'
 import FxMenus from '@/base-ui/fx-header/menus/FxMenus.vue'
 import Home from './views/Home/home.vue'
+import FxContact from '@/views/Home/cpns/fx-contact'
 export default defineComponent({
   components: {
     FxHeader,
     ScrollTop,
     DropDown,
-    FxMenus
+    FxMenus,
+    FxContact
   },
   setup() {
     const isTop = ref(true)

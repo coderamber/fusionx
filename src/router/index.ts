@@ -7,12 +7,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/Home/home.vue')
   },
   {
-    path: '/fusionx1',
+    path: '/demo1',
     name: 'Fusionx1',
     component: () => import('@/views/Others/demo1/demo.vue')
   },
   {
-    path: '/fusionx2',
+    path: '/demo2',
     name: 'Fusionx2',
     component: () => import('@/views/Others/demo2/demo.vue')
   },

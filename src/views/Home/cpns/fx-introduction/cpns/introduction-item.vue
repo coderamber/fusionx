@@ -58,7 +58,7 @@
       <div class="title">无人机变电站巡检</div>
       <div class="mb-content-item">
         <div class="content-item">室内巡检</div>
-        <div class="content-item">只能识别</div>
+        <div class="content-item">智能识别</div>
         <div class="content-item">自定义航线飞行</div>
       </div>
     </section>
@@ -88,6 +88,7 @@ export default defineComponent({
 
 <style scoped lang="less">
 .introduction-item-container {
+  // display: none;
   height: 800px;
   position: relative;
   width: 100%;
@@ -140,6 +141,7 @@ export default defineComponent({
 }
 @media screen and (max-width: 899px) {
   .introduction-item-container {
+    // display: block !important;
     height: 400px;
     flex-direction: column;
     width: 100%;

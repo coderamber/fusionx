@@ -10,6 +10,5 @@ export const menus: IMenus[] = [
   { name: '产品及服务', id: 'service' },
   { name: '关于我们', id: 'workSpace' },
   { name: '合作伙伴', id: 'cooperate' },
-  { name: '联系方式', id: 'contact' },
   { name: '演示Demo', id: 'demo' }
 ]

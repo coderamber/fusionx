@@ -1,8 +1,8 @@
 <template>
   <header class="fx-header top" ref="fxHeader">
     <div class="logo">
-      <!-- <div class="logo-img"></div> -->
-      <div class="logo-text" style="margin-left: 10px">赋兴 Fusionx</div>
+      <!-- <div class="logo-text" style="margin-left: 10px">赋兴 Fusionx</div> -->
+      <div class="logo-img" ref="logoImgRef"></div>
     </div>
     <ul>
       <li v-for="item in menus" :key="item">
@@ -27,11 +27,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { menus } from '../config/header.config'
-import { fxHeader, useScroll } from '../hooks/useScroll'
+import { fxHeader, useScroll, logoImgRef } from '../hooks/useScroll'
 export default defineComponent({
   emits: ['scroll', 'showDropDown', 'showFxMenus'],
   setup(prop, { emit }) {
     useScroll()
+
     const handleScroll = (id: string) => {
       if (id === 'demo') {
         emit('showDropDown')
@@ -39,6 +40,7 @@ export default defineComponent({
         emit('scroll', id)
       }
     }
+
     const showMenus = () => {
       emit('showFxMenus')
     }
@@ -46,7 +48,8 @@ export default defineComponent({
       fxHeader,
       menus,
       handleScroll,
-      showMenus
+      showMenus,
+      logoImgRef
     }
   }
 })
@@ -96,18 +99,19 @@ export default defineComponent({
   align-items: center;
   transition: 0.6s;
   color: @fontColorWhite;
-  padding: 0 50px;
+  padding: 0 50px 0 0;
   z-index: 100000;
   overflow: hidden;
   color: #000;
   .logo {
-    position: relative;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-style: italic;
+    height: 70px;
+    width: 200px;
+    .logo-img {
+      height: 70px;
+      width: auto;
+      background: url('~@/assets/img/logo1.png') no-repeat center;
+      background-size: contain;
+    }
   }
   ul {
     position: relative;
@@ -131,6 +135,11 @@ export default defineComponent({
       }
     }
   }
+  @media screen and (max-width: 899px) {
+    ul {
+      display: none;
+    }
+  }
   .mb-btn {
     display: none;
     .mb-btn {
@@ -142,11 +151,6 @@ export default defineComponent({
         border: 1.5px #fff solid;
         margin: 5px 0;
       }
-    }
-  }
-  @media screen and (max-width: 899px) {
-    ul {
-      display: none;
     }
   }
   .demo-btn {

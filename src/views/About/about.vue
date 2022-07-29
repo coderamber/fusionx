@@ -12,11 +12,14 @@
         <!-- <div class="title-2">赋兴（浙江）数字科技有限公司</div> -->
         <p>
           &emsp;&emsp;公司成立于2021年，是一家专业从事电力、能源及城市公共服务领域智慧化、信息化系列产品及平台研发的科技型企业，公司总部位于浙江省嘉兴市南湖区中科院三期，公司以<strong>复旦大学、同济大学博士团队为核心，联合浙江清华长三角研究院</strong>。
-          <br />
+        </p>
+        <p>
           &emsp;&emsp;公司于2022年6月获评<strong>国家级科技型中小企业</strong>，已通过<strong>ISO9001质量管理体系</strong>认证，是民航华东局授权的通用<strong>航空经营企业</strong>。
-          <br />
+        </p>
+        <p>
           &emsp;&emsp;汇聚了一批<strong>大数据分析、人工智能、虚拟现实、5G通信和电力电子技术领域</strong>的领军技术力量。
-          <br />
+        </p>
+        <p>
           &emsp;&emsp;公司在“<strong>电站数字化管理</strong>”、“<strong>全自主无人机立体巡检系统</strong>”、“<strong>5G无人机VR全景直播系统</strong>”以及“<strong>智慧能源管理解决方案</strong>”等业务领域可提供成熟的解决方案,并已在电力、能源、环保、市政等领域实现成功应用。
         </p>
         <div class="title">
@@ -99,6 +102,8 @@
         </div>
       </div>
     </div>
+    <!-- 底部 -->
+    <fx-contact ref="contact" />
   </div>
 </template>
 
@@ -107,10 +112,12 @@ import { defineComponent, ref } from 'vue'
 import SwiperClass, { Navigation, Thumbs } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue/swiper-vue'
 import 'swiper/swiper-bundle.min.css'
+import FxContact from '@/views/Home/cpns/fx-contact'
 export default defineComponent({
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    FxContact
   },
   setup() {
     const thumbsSwiper = ref<SwiperClass>()
