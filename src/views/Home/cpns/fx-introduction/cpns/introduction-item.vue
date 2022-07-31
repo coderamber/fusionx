@@ -88,11 +88,11 @@ export default defineComponent({
 
 <style scoped lang="less">
 .introduction-item-container {
-  // display: none;
+  display: none;
   height: 800px;
   position: relative;
   width: 100%;
-  display: flex;
+  // display: flex;
   .bg-box {
     flex: 1;
     background: #f0f4ff;
@@ -141,7 +141,7 @@ export default defineComponent({
 }
 @media screen and (max-width: 899px) {
   .introduction-item-container {
-    // display: block !important;
+    display: block !important;
     height: 400px;
     flex-direction: column;
     width: 100%;

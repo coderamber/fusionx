@@ -63,7 +63,7 @@ export default defineComponent({
 
 <style scoped lang="less">
 .home {
-  overflow: hidden;
+  // overflow: hidden;
   font: inherit;
   vertical-align: baseline;
   position: relative;
