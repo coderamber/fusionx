@@ -5,7 +5,7 @@
         <video :src="swiperItemConfig.url" loop muted autoplay></video>
       </template>
       <template v-else>
-        <img :src="swiperItemConfig.url" />
+        <img :src="swiperItemConfig.url" alt="赋兴数字科技" />
       </template>
     </div>
     <div

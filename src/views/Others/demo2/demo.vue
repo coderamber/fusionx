@@ -17,7 +17,7 @@
     </div>
     <div class="header">
       <div class="left-logo">
-        <img src="~@/assets/img/logo.png" />
+        <img src="~@/assets/img/logo.png" alt="赋兴数字科技" />
         <i>赋兴数字无人机巡检系统</i>
       </div>
       <div class="time">{{ nowTime }}</div>
@@ -26,17 +26,24 @@
     <!-- <data-charts /> -->
     <el-tooltip effect="dark" content="一键起飞" placement="right">
       <div class="one-key-fly">
-        <img src="~@/assets/img/demo2/flight.svg" alt="" />
+        <img src="~@/assets/img/demo2/flight.svg" alt="赋兴数字科技" />
       </div>
     </el-tooltip>
     <el-tooltip effect="dark" content="进入后台管理" placement="bottom">
       <div class="go-home">
-        <img src="~@/assets/img/demo2/setting.svg" alt="" @click="toHome" />
+        <img
+          src="~@/assets/img/demo2/setting.svg"
+          alt="赋兴数字科技"
+          @click="toHome"
+        />
       </div>
     </el-tooltip>
     <div class="start">
       <div class="header-line">
-        <img src="~@/assets/img/demo2/dot.png" />&nbsp;&nbsp;查看用电
+        <img
+          src="~@/assets/img/demo2/dot.png"
+          alt="赋兴数字科技"
+        />&nbsp;&nbsp;查看用电
       </div>
       <div id="chart_bottom_1" class="fly-buttom" @click="goElectric">
         <br /><br /><br /><br /><br /><br />

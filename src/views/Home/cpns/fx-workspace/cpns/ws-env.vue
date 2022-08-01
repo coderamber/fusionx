@@ -3,16 +3,19 @@
     <div class="ws-env-img">
       <img
         v-lazy="require('../../../../../assets/img/workspace/ws-env1.jpg')"
+        alt="赋兴数字科技"
       />
     </div>
     <div class="ws-env-img">
       <img
         v-lazy="require('../../../../../assets/img/workspace/ws-env2.jpg')"
+        alt="赋兴数字科技"
       />
     </div>
     <div class="ws-env-img">
       <img
         v-lazy="require('../../../../../assets/img/workspace/ws-env3.jpg')"
+        alt="赋兴数字科技"
       />
     </div>
   </div>

@@ -8,7 +8,10 @@
     <div class="demo-container">
       <div class="demo" @click="showDemo(1)">
         <div class="img">
-          <img v-lazy="require('../../../assets/img/home/small1.png')" />
+          <img
+            v-lazy="require('../../../assets/img/home/small1.png')"
+            alt="赋兴数字科技"
+          />
         </div>
         <div class="text">园区能源管理系统</div>
       </div>

@@ -2,7 +2,10 @@
   <footer class="fx-contact" ref="contact">
     <div class="contact-us row">
       <div class="logo col-md-4">
-        <img src="../../../../../assets/img/contact/logo.png" alt="" />
+        <img
+          src="../../../../../assets/img/contact/logo.png"
+          alt="赋兴数字科技"
+        />
       </div>
       <div class="main-content col-md-4 col-12">
         <div>联系我们</div>
@@ -16,6 +19,7 @@
           <div class="qr-img">
             <img
               v-lazy="require('../../../../../assets/img/contact/gzwm.jpg')"
+              alt="赋兴数字科技"
             />
           </div>
         </div>
@@ -24,6 +28,7 @@
           <div class="qr-img">
             <img
               v-lazy="require('../../../../../assets/img/contact/jrwm.jpg')"
+              alt="赋兴数字科技"
             />
           </div>
         </div>
@@ -98,6 +103,23 @@ export default defineComponent({
         img {
           margin: 20px;
           height: 100px;
+        }
+      }
+    }
+    @media screen and (max-width: 899px) {
+      .main-content {
+        white-space: inherit;
+      }
+      .logo {
+        img {
+          height: 80px;
+        }
+      }
+      .qr {
+        .qr-box {
+          img {
+            height: 80px;
+          }
         }
       }
     }

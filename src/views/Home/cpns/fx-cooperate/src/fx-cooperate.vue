@@ -11,7 +11,7 @@
         v-for="(item, index) in cooperates"
         :key="index"
       >
-        <img v-lazy="item" alt="" />
+        <img v-lazy="item" alt="赋兴数字科技" />
       </div>
     </div>
   </div>

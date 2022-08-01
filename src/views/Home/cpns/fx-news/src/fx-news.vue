@@ -37,7 +37,7 @@
         <template v-for="(item, index) in banners" :key="index">
           <swiper-slide>
             <div class="video-box">
-              <img :src="item" />
+              <img :src="item" alt="赋兴数字科技" />
             </div>
           </swiper-slide>
         </template>

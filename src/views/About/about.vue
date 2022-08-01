@@ -6,7 +6,7 @@
     <div class="content">
       <div class="main">
         <div class="title">
-          <img src="~@/assets/img/icon/intro.svg" alt="" />
+          <img src="~@/assets/img/icon/intro.svg" alt="赋兴数字科技" />
           <span>公司简介</span>
         </div>
         <!-- <div class="title-2">赋兴（浙江）数字科技有限公司</div> -->
@@ -23,7 +23,7 @@
           &emsp;&emsp;公司在“<strong>电站数字化管理</strong>”、“<strong>全自主无人机立体巡检系统</strong>”、“<strong>5G无人机VR全景直播系统</strong>”以及“<strong>智慧能源管理解决方案</strong>”等业务领域可提供成熟的解决方案,并已在电力、能源、环保、市政等领域实现成功应用。
         </p>
         <div class="title">
-          <img src="~@/assets/img/icon/show.svg" alt="" />
+          <img src="~@/assets/img/icon/show.svg" alt="赋兴数字科技" />
           <span>公司展厅</span>
         </div>
         <div class="swiper-box">
@@ -41,6 +41,7 @@
             <swiper-slide class="slide" v-for="index in 3" :key="index">
               <img
                 :src="require(`../../assets/img/about/ws-show${index}.jpg`)"
+                alt="赋兴数字科技"
               />
             </swiper-slide>
           </swiper>
@@ -57,12 +58,13 @@
             <swiper-slide class="slide" v-for="index in 3" :key="index">
               <img
                 :src="require(`../../assets/img/about/ws-show${index}.jpg`)"
+                alt="赋兴数字科技"
               />
             </swiper-slide>
           </swiper>
         </div>
         <div class="title">
-          <img src="~@/assets/img/icon/env.svg" alt="" />
+          <img src="~@/assets/img/icon/env.svg" alt="赋兴数字科技" />
           <span>公司环境</span>
         </div>
         <div class="swiper-box" style="margin-bottom: 50px">
@@ -80,6 +82,7 @@
             <swiper-slide class="slide" v-for="index in 3" :key="index">
               <img
                 :src="require(`../../assets/img/about/ws-env${index}.jpg`)"
+                alt="赋兴数字科技"
               />
             </swiper-slide>
           </swiper>
@@ -96,6 +99,7 @@
             <swiper-slide class="slide" v-for="index in 3" :key="index">
               <img
                 :src="require(`../../assets/img/about/ws-env${index}.jpg`)"
+                alt="赋兴数字科技"
               />
             </swiper-slide>
           </swiper>

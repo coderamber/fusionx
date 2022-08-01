@@ -14,7 +14,9 @@
         <div class="title">
           <i>园区能源管理系统</i>
         </div>
-        <div><img src="~@/assets/img/demo1/line1.png" /></div>
+        <div>
+          <img src="~@/assets/img/demo1/line1.png" alt="赋兴数字科技" />
+        </div>
       </div>
       <div class="middle">
         <table style="width: 300px">
@@ -23,21 +25,28 @@
               <img
                 src="~@/assets/img/demo1/icon_sunset.png"
                 style="width: 20px"
+                alt="赋兴数字科技"
               />
             </td>
             <td style="text-align: center">
-              <img src="~@/assets/img/demo1/icon_sun.png" style="width: 20px" />
+              <img
+                src="~@/assets/img/demo1/icon_sun.png"
+                style="width: 20px"
+                alt="赋兴数字科技"
+              />
             </td>
             <td style="text-align: center">
               <img
                 src="~@/assets/img/demo1/icon_sunset.png"
                 style="width: 20px"
+                alt="赋兴数字科技"
               />
             </td>
             <td style="text-align: center">
               <img
                 src="~@/assets/img/demo1/icon_moon.png"
                 style="width: 20px"
+                alt="赋兴数字科技"
               />
             </td>
           </tr>
@@ -45,7 +54,11 @@
             <td style="text-align: center"></td>
             <td style="text-align: center"></td>
             <td style="text-align: center">
-              <img src="~@/assets/img/demo1/ball.png" style="width: 20px" />
+              <img
+                src="~@/assets/img/demo1/ball.png"
+                style="width: 20px"
+                alt="赋兴数字科技"
+              />
             </td>
             <td style="text-align: center"></td>
           </tr>

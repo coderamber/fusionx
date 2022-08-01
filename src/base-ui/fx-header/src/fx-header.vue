@@ -5,7 +5,7 @@
       <div class="logo-img" ref="logoImgRef"></div>
     </div>
     <ul>
-      <li v-for="item in menus" :key="item">
+      <li v-for="item in menus" :key="item.name">
         <template v-if="item.id !== 'demo'">
           <a @click="handleScroll(item.id)">{{ item.name }}</a>
         </template>

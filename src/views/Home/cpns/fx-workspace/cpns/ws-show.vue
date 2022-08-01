@@ -3,16 +3,19 @@
     <div class="ws-show-img">
       <img
         v-lazy="require('../../../../../assets/img/workspace/ws-show1.jpg')"
+        alt="赋兴数字科技"
       />
     </div>
     <div class="ws-show-img">
       <img
         v-lazy="require('../../../../../assets/img/workspace/ws-show2.jpg')"
+        alt="赋兴数字科技"
       />
     </div>
     <div class="ws-show-img">
       <img
         v-lazy="require('../../../../../assets/img/workspace/ws-show3.jpg')"
+        alt="赋兴数字科技"
       />
     </div>
   </div>

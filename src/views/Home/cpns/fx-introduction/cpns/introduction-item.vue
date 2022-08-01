@@ -17,6 +17,7 @@
     <div class="content-img-box" style="left: 10%">
       <img
         v-lazy="require('../../../../../assets/img/introduction/solve.png')"
+        alt="赋兴数字科技"
       />
     </div>
   </section>
@@ -36,12 +37,13 @@
       style="background: #f0fbef"
     >
       <div class="bg-item" style="right: 5%">
-        <img src="~@/assets/img/introduction/item4.webp" alt="" />
+        <img src="~@/assets/img/introduction/item4.webp" alt="赋兴数字科技" />
       </div>
     </div>
     <div class="content-img-box" style="right: 10%">
       <img
         v-lazy="require('../../../../../assets/img/introduction/fusionx.png')"
+        alt="赋兴数字科技"
       />
     </div>
   </section>
@@ -51,7 +53,7 @@
       style="background: #ecf9fe"
     >
       <div class="bg-item" style="left: 5%">
-        <img src="~@/assets/img/introduction/item3.webp" />
+        <img src="~@/assets/img/introduction/item3.webp" alt="赋兴数字科技" />
       </div>
     </div>
     <section class="content wow animate__animated animate__fadeInRight">
@@ -63,7 +65,10 @@
       </div>
     </section>
     <div class="content-img-box" style="left: 10%">
-      <img v-lazy="require('../../../../../assets/img/introduction/8.jpg')" />
+      <img
+        v-lazy="require('../../../../../assets/img/introduction/8.jpg')"
+        alt="赋兴数字科技"
+      />
     </div>
   </section>
 </template>

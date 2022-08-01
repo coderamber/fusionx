@@ -7,6 +7,11 @@
     />
     <introduction-item />
     <div class="intro-box">
+      <div class="bg-animation">
+        <div class="sticky-box">
+          <xh-bg />
+        </div>
+      </div>
       <div class="intro-left">
         <ul>
           <transition-group name="list">
@@ -33,50 +38,32 @@
         <ul>
           <div class="intro-img-box">
             <div class="intro-img-inner-box">
-              <div class="bg-box wow animate__animated animate__fadeInLeft">
-                <div class="bg-item" style="left: 5%">
-                  <img src="~@/assets/img/introduction/item2.webp" alt="" />
-                </div>
-              </div>
               <img
                 style="left: 5%"
                 v-lazy="
                   require('../../../../../assets/img/introduction/solve.png')
                 "
+                alt="赋兴数字科技"
               />
             </div>
           </div>
           <div class="intro-img-box">
             <div class="intro-img-inner-box">
-              <div
-                class="bg-box wow animate__animated animate__fadeInRight"
-                style="background: #f0fbef"
-              >
-                <div class="bg-item" style="right: 5%">
-                  <img src="~@/assets/img/introduction/item4.webp" alt="" />
-                </div>
-              </div>
               <img
                 style="right: 5%"
                 v-lazy="
                   require('../../../../../assets/img/introduction/fusionx.png')
                 "
+                alt="赋兴数字科技"
               />
             </div>
           </div>
           <div class="intro-img-box">
             <div class="intro-img-inner-box">
-              <div
-                class="bg-box wow animate__animated animate__fadeInLeft"
-                style="background: #ecf9fe"
-              >
-                <div class="bg-item" style="left: 5%">
-                  <img src="~@/assets/img/introduction/item3.webp" />
-                </div>
-              </div>
               <img
                 style="left: 5%"
                 v-lazy="require('../../../../../assets/img/introduction/8.jpg')"
+                alt="赋兴数字科技"
               />
             </div>
           </div>
@@ -97,10 +84,14 @@ import {
 import useIntoView from '@/hooks/useIntoView'
 import IntroductionItem from '../cpns/introduction-item.vue'
 import xhTitle from '@/base-ui/xhTitle'
+import xhBg from '@/components/xh-components/xh-bg.vue'
+import XhBg from '@/components/xh-components/xh-bg.vue'
 export default defineComponent({
   components: {
     xhTitle,
-    IntroductionItem
+    IntroductionItem,
+    xhBg,
+    XhBg
   },
   setup() {
     const showIndex = ref(0)
@@ -175,6 +166,20 @@ export default defineComponent({
     width: calc(100vw - ((100vw - 1280px) / 2));
     height: 300vh;
     margin-left: calc((100vw - 1280px) / 2);
+    .bg-animation {
+      position: absolute;
+      top: 0 !important;
+      height: 300vh;
+      width: 100%;
+      z-index: -1;
+      transform: translateX(-20%);
+      .sticky-box {
+        position: sticky;
+        top: 0 !important;
+        width: 100%;
+        height: 100vh;
+      }
+    }
     .intro-left {
       position: sticky;
       z-index: 99;

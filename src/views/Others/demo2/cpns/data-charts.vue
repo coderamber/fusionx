@@ -2,19 +2,29 @@
   <div class="data-charts">
     <div class="right-top">
       <center style="height: 80%">
-        <img src="~@/assets/img/demo2/down_arrow.png" id="down_arrow" />
+        <img
+          src="~@/assets/img/demo2/down_arrow.png"
+          id="down_arrow"
+          alt="赋兴数字科技"
+        />
       </center>
     </div>
     <div class="right-charts">
       <div style="height: 45%">
         <div class="title">
-          <img src="~@/assets/img/demo2/dot.png" />月巡检故障数
+          <img
+            src="~@/assets/img/demo2/dot.png"
+            alt="赋兴数字科技"
+          />月巡检故障数
         </div>
         <div class="chart"></div>
       </div>
       <div style="height: 45%; margin-top: 5%">
         <div class="title">
-          <img src="~@/assets/img/demo2/dot.png" />月故障隐患消除
+          <img
+            src="~@/assets/img/demo2/dot.png"
+            alt="赋兴数字科技"
+          />月故障隐患消除
         </div>
         <div class="chart2"></div>
       </div>
